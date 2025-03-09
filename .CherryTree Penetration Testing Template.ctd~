@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node unique_id="5" master_id="0" name="Penetration Test Lab Template" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510811" ts_lastsave="1741513178">
+    <node unique_id="53" master_id="0" name="00 - Pre-Engagement Information" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741513178" ts_lastsave="1741513182">
+      <node unique_id="54" master_id="0" name="Scope of Testing" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741513198" ts_lastsave="1741513198"/>
+    </node>
+    <node unique_id="1" master_id="0" name="01 - VM Information" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510423" ts_lastsave="1741511426">
+      <rich_text>Document general VM details clearly for quick reference</rich_text>
+      <node unique_id="9" master_id="0" name="Name" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510957" ts_lastsave="1741511434">
+        <rich_text>Name of the VM being tested.</rich_text>
+      </node>
+      <node unique_id="10" master_id="0" name="IP Address(es)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510968" ts_lastsave="1741511441">
+        <rich_text>Target IP(s) assigned to the VM.</rich_text>
+      </node>
+      <node unique_id="11" master_id="0" name="Download URL" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510976" ts_lastsave="1741511449">
+        <rich_text>Link to VM for future reference.</rich_text>
+      </node>
+      <node unique_id="12" master_id="0" name="Difficulty Level" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510986" ts_lastsave="1741511455">
+        <rich_text>Easy, Intermediate, Advanced, Expert.</rich_text>
+      </node>
+      <node unique_id="13" master_id="0" name="Objective/Description" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510995" ts_lastsave="1741511462">
+        <rich_text>URL or author reference to original VM.</rich_text>
+      </node>
+    </node>
+    <node unique_id="2" master_id="0" name="02 - Enumeration" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510439" ts_lastsave="1741511964">
+      <rich_text>• Conduct thorough reconnaissance to identify potential attack vectors.
+• Gather detailed information about running services, versions, and potential vulnerabilities to inform the next steps.
+• Methodically record each enumeration technique and outcome clearly.</rich_text>
+      <node unique_id="14" master_id="0" name="Host Discovery" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511006" ts_lastsave="1741511483">
+        <rich_text>• Identify live hosts using commands like netdiscover, ping sweep, or nmap -sn
+• Record commands used and results</rich_text>
+        <node unique_id="15" master_id="0" name="Commands and Results" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511014" ts_lastsave="1741511014"/>
+      </node>
+      <node unique_id="16" master_id="0" name="Port Scanning (Nmap)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511023" ts_lastsave="1741511605">
+        <rich_text>• Identify open ports, running services, and their versions.
+Typical commands:
+</rich_text>
+        <rich_text justification="left"></rich_text>
+        <rich_text>
+• Record detailed scan results.</rich_text>
+        <codebox char_offset="79" justification="left" frame_width="200" frame_height="10" width_in_pixels="1" syntax_highlighting="sh" highlight_brackets="1" show_line_numbers="0">nmap -sC -sV -oN fullscan.txt &lt;IP&gt;</codebox>
+        <node unique_id="17" master_id="0" name="Commands and Results" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511034" ts_lastsave="1741511034"/>
+      </node>
+      <node unique_id="18" master_id="0" name="Service Enumeration" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511044" ts_lastsave="1741511804">
+        <rich_text>• Detailed exploration of running services (HTTP, FTP, SSH, SMB, etc.).
+• Use specific tools (Nikto, Dirb, Gobuster, manual enumeration).
+• Capture findings clearly for later exploitation.</rich_text>
+        <node unique_id="19" master_id="0" name="Web Enumeration" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511057" ts_lastsave="1741511837">
+          <rich_text>Tools like dirb, gobuster, or Burp Suite.</rich_text>
+          <node unique_id="20" master_id="0" name="Commands, URLs, Results" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511066" ts_lastsave="1741511887">
+            <rich_text>Explicit outputs and interesting findings.</rich_text>
+          </node>
+        </node>
+        <node unique_id="51" master_id="0" name="Service Enumeration" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511804" ts_lastsave="1741511854">
+          <rich_text>SMB, FTP, SSH enumeration details.</rich_text>
+          <node unique_id="52" master_id="0" name="Commands, URLs, Results" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511862" ts_lastsave="1741511888">
+            <rich_text>Explicit outputs and interesting findings.</rich_text>
+          </node>
+        </node>
+      </node>
+      <node unique_id="24" master_id="0" name="Vulnerability Identification" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511121" ts_lastsave="1741511155">
+        <node unique_id="25" master_id="0" name="CVEs Identified" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511133" ts_lastsave="1741511916">
+          <rich_text>Potential vulnerabilities identified through enumeration.</rich_text>
+        </node>
+        <node unique_id="26" master_id="0" name="Potential Exploits (exploit-db, Google search, etc.)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511144" ts_lastsave="1741511923">
+          <rich_text>References (Exploit-DB, Metasploit, Google, GitHub).</rich_text>
+        </node>
+        <node unique_id="27" master_id="0" name="Notes and Observations" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511155" ts_lastsave="1741511931">
+          <rich_text>Any significant observations from the enumeration phase.</rich_text>
+        </node>
+      </node>
+    </node>
+    <node unique_id="3" master_id="0" name="03 - Exploitation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510449" ts_lastsave="1741512116">
+      <rich_text>• Precisely track the exploitation phase, documenting how access was initially gained.
+• Exploitation Steps: Provide details about exploits used (manual or automated) and reasoning.
+• Payloads and Commands: Provide the exact payloads or scripts executed.
+• Results &amp; Screenshots: Document successful exploitation clearly.</rich_text>
+      <node unique_id="28" master_id="0" name="Exploit Selection and Justification" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511173" ts_lastsave="1741511995">
+        <rich_text>Clearly state why a particular exploit is chosen based on enumeration.</rich_text>
+      </node>
+      <node unique_id="29" master_id="0" name="Exploit Commands Used" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511181" ts_lastsave="1741512013">
+        <rich_text>Exact commands used to perform the exploit, including scripts and payloads.</rich_text>
+      </node>
+      <node unique_id="30" master_id="0" name="Initial Shell" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511190" ts_lastsave="1741511199">
+        <node unique_id="31" master_id="0" name="Details (user, privileges, environment variables, etc.)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511199" ts_lastsave="1741511199"/>
+      </node>
+      <node unique_id="32" master_id="0" name="Proof of Exploitation (screenshots, etc.)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511210" ts_lastsave="1741512029">
+        <rich_text>Capture screenshots, console outputs, or relevant evidence to confirm successful exploitation (reverse shells, file access, etc.).</rich_text>
+      </node>
+    </node>
+    <node unique_id="4" master_id="0" name="04 - Privilege Escalation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510458" ts_lastsave="1741512140">
+      <rich_text>• Record detailed escalation steps to gain higher privileges on the compromised host.
+• Detailed Enumeration: Commands and findings that guided the privilege escalation.
+• Path Chosen: Justification and rationale for selected escalation method.
+• Detailed Steps &amp; Commands: Step-by-step documentation of the escalation process.
+• Proof: Screenshots or textual output proving elevated access.
+</rich_text>
+      <node unique_id="33" master_id="0" name="Enumeration for Privilege Escalation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511221" ts_lastsave="1741512052">
+        <rich_text>Record steps, commands, and findings (e.g., sudo -l, LinPEAS, WinPEAS).</rich_text>
+        <node unique_id="34" master_id="0" name="Commands and Results (LinPEAS/WinPEAS, manual checks, etc.)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511231" ts_lastsave="1741511231"/>
+      </node>
+      <node unique_id="35" master_id="0" name="Privilege Escalation Path Identified" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511246" ts_lastsave="1741512059">
+        <rich_text>Clearly document the exact vulnerability or misconfiguration found.</rich_text>
+      </node>
+      <node unique_id="36" master_id="0" name="Exploit/Method Used" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511255" ts_lastsave="1741512069">
+        <rich_text>Explicit details on scripts or exploits leveraged.</rich_text>
+        <node unique_id="37" master_id="0" name="Commands and Results" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511266" ts_lastsave="1741511266"/>
+      </node>
+      <node unique_id="38" master_id="0" name="Root/Admin Shell" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511275" ts_lastsave="1741512091">
+        <rich_text>Proof of successful privilege escalation.</rich_text>
+        <node unique_id="39" master_id="0" name="Details (user, hostname, privilege proof)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511284" ts_lastsave="1741511284"/>
+        <node unique_id="40" master_id="0" name="Proof of Root/Admin (screenshots, etc.)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511292" ts_lastsave="1741511292"/>
+      </node>
+    </node>
+    <node unique_id="6" master_id="0" name="05 - Post-Exploitation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510863" ts_lastsave="1741512178">
+      <rich_text>Summarize post-compromise activities and cleanup procedures.</rich_text>
+      <node unique_id="41" master_id="0" name="Sensitive Information Discovered" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511305" ts_lastsave="1741512185">
+        <rich_text>Document any passwords, hashes, confidential data, etc.</rich_text>
+      </node>
+      <node unique_id="42" master_id="0" name="Persistence Techniques Used (if any)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511313" ts_lastsave="1741512193">
+        <rich_text>Methods used to maintain access (if applicable)</rich_text>
+      </node>
+      <node unique_id="43" master_id="0" name="Data Exfiltration (if applicable)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511321" ts_lastsave="1741512199">
+        <rich_text>Clearly document techniques and commands if data extraction was performed.</rich_text>
+      </node>
+      <node unique_id="44" master_id="0" name="Cleanup (restore initial state if applicable)" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511330" ts_lastsave="1741512210">
+        <rich_text>Steps taken to restore the environment (important for practice scenarios).</rich_text>
+      </node>
+    </node>
+    <node unique_id="7" master_id="0" name="06 - Lessons Learned &amp; Reflections" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510879" ts_lastsave="1741512228">
+      <rich_text>Critically reflect on the experience to improve skills for future penetration testing exercises.</rich_text>
+      <node unique_id="45" master_id="0" name="Challenges Faced &amp; Solutions" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511345" ts_lastsave="1741512236">
+        <rich_text>Detailed problems encountered and clearly described solutions or workarounds.</rich_text>
+      </node>
+      <node unique_id="46" master_id="0" name="New Tools or Techniques Learned" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511353" ts_lastsave="1741512337">
+        <rich_text>Emphasize commands or techniques learned or improved upon.
+</rich_text>
+      </node>
+      <node unique_id="47" master_id="0" name="Mistakes to Avoid Next Time" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511360" ts_lastsave="1741512346">
+        <rich_text>Note areas for improvement or alternate approaches to speed up the process next time.</rich_text>
+      </node>
+      <node unique_id="48" master_id="0" name="Additional Resources/Reading" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511368" ts_lastsave="1741511368"/>
+    </node>
+    <node unique_id="8" master_id="0" name="07 - Useful Resources" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741510889" ts_lastsave="1741511385">
+      <node unique_id="49" master_id="0" name="URLs &amp; References" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511377" ts_lastsave="1741511377"/>
+      <node unique_id="50" master_id="0" name="Command Cheatsheet" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1741511385" ts_lastsave="1741511385"/>
+    </node>
+  </node>
+</cherrytree>
